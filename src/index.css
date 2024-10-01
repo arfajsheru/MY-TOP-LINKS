@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background: linear-gradient(45deg,#62cff4,#ff00ff);
+}
+
+
+.box-color{
+  background: linear-gradient(-179deg,#28a5de,#ffe0e0);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+
+.box-color:hover {
+  transform: scale(1.05); /* 5% zoom on hover */
+  background-color: #f0f0f0; /* Change background color on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  color: #0077b5; /* Change text color on hover */
+  filter: brightness(0.8); /* Slightly darken the icon */  
+
+}
