@@ -8,6 +8,7 @@ import { IoClose } from "react-icons/io5";
 import logo from "../assets/logo.svg";
 import MobileNavbar from "./MobileNavbar";
 import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -66,21 +67,21 @@ const Header = () => {
 
         {/* Menu Options */}
         <ul className="flex flex-col gap-6 p-6 text-gray-700 text-lg">
-          <li className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
+          <Link to={"/"} onClick={toggleMenu} className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
             Home
-          </li>
-          <li className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
+          </Link>
+          <Link to={"/collection"} onClick={toggleMenu} className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
             Collection
-          </li>
-          <li className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
+          </Link>
+          <Link to={"brand"} onClick={toggleMenu} className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
             Brands
-          </li>
-          <li className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
+          </Link>
+          <Link to={"about"} onClick={toggleMenu} className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
             About
-          </li>
-          <li className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
+          </Link>
+          <Link to={"contactus"} onClick={toggleMenu} className="cursor-pointer hover:text-[#ad954f] transition-transform duration-300 hover:translate-x-2">
             Contact Us
-          </li>
+          </Link>
         </ul>
 
         {/* Footer Section */}
