@@ -33,7 +33,7 @@ const MobileNavbar = () => {
         <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500 relative">
           <Link to="/favorites"> {/* Favourite route */}
             <MdOutlineFavoriteBorder className="text-2xl" />
-            <span className="absolute -top-1 right-3 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">5</span>
+            <span className="absolute -top-1 right-4 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">5</span>
             <span className="text-xs">Favourite</span>
           </Link>
         </li>
