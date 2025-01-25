@@ -29,7 +29,9 @@ const Header = () => {
       {/* Header Main */}
       <div className="bg-[#ad954f] flex justify-between items-center w-full p-4 text-2xl relative">
         {/* Logo */}
-        <img src={logo} className="w-[40%] max-w-[150px]" alt="logo img" />
+        <Link to={"/"} className="w-full">
+        <img src={logo} className="w-[70%]" alt="logo img" />
+        </Link>
 
         {/* Icons */}
         <div className="flex items-center gap-6 text-white text-lg">
