@@ -8,6 +8,9 @@
   box-sizing: border-box;
 }
 
+body{
+  background:linear-gradient(#ffe3fb,#dddddd);
+}
 
 @keyframes marquee {
   0% {

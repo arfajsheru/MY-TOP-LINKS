@@ -86,7 +86,7 @@ const Header = () => {
         {/* Footer Section */}
         <div className="absolute bottom-4 w-full px-6">
           <p className="text-sm text-gray-500">
-            © 2025 Your Company. All rights reserved.
+            © 2025 envento marketing. All rights reserved.
           </p>
         </div>
       </div>

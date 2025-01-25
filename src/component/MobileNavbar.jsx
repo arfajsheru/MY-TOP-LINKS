@@ -3,31 +3,34 @@ import { GiBoxUnpacking } from "react-icons/gi";
 import {
     MdOutlineFavoriteBorder,
     MdOutlineLocalGroceryStore,
-  } from "react-icons/md";
-  import { IoMdHome } from "react-icons/io";
+} from "react-icons/md";
+import { IoMdHome } from "react-icons/io";
+
 const MobileNavbar = () => {
   return (
     <div className="w-full fixed px-2 py-3 bg-[#ad954f] bottom-0">
       <ul className="flex justify-around items-center">
-        <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500 hover:text-black">
-          <IoMdHome className="text-2xl hover:text-black" />
+        <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500">
+          <IoMdHome className="text-2xl" />
           <span className="text-xs">Home</span>
         </li>
-        <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500 hover:text-black">
-          <GiBoxUnpacking className="text-2xl hover:text-black" />
-          <span className="text-xs">Collection</span>
+        <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500">
+          <GiBoxUnpacking className="text-2xl" />
+          <span className="text-xs">Order</span>
         </li>
-        <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500 hover:text-black">
-          <MdOutlineFavoriteBorder className="text-2xl hover:text-black" />
-          <span className="text-xs">Brands</span>
+        <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500 relative">
+          <MdOutlineLocalGroceryStore className="text-2xl" />
+          <span className="absolute -top-1 -right-1  bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+          <span className="text-xs">Store</span>
         </li>
-        <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500 hover:text-black">
-          <MdOutlineLocalGroceryStore className="text-2xl hover:text-black" />
-          <span className="text-xs">About</span>
+        <li className="cursor-pointer text-white flex flex-col items-center gap-1 duration-500 relative">
+          <MdOutlineFavoriteBorder className="text-2xl" />
+          <span className="absolute -top-1 right-0 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">5</span>
+          <span className="text-xs">Favourite</span>
         </li>
       </ul>
     </div>
   )
 }
 
-export default MobileNavbar
+export default MobileNavbar;
