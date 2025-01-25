@@ -41,18 +41,18 @@ const Hero = () => {
         
           {/* Right Side (Text and Button) */}
           <div className="w-full sm:w-1/2 p-6 flex flex-col items-center justify-center">
-            <h2 className="text-3xl font-bold text-[#ad954f] mb-4 text">About Us</h2>
-            <p className="text-lg text-gray-600 mb-6 text-center">
+            <h2 className="text-3xl font-bold text-[#ad954f] mb-2 text">About Us</h2>
+            <p className="text-sm text-gray-600 mb-6 text-center">
               We are dedicated to providing innovative solutions to help you
               achieve your goals. Our team is driven by a commitment to
               excellence and success.
             </p>
-            <p className="text-lg text-gray-600 mb-4 text-center">
+            <p className="text-sm text-gray-600 mb-3 text-center">
               Whether you need assistance with planning, organization, or
               problem-solving, we are here to guide you through every step of
               the way.
             </p>
-            <button className="px-6 w-40 py-3 bg-[#ad954f] text-white font-semibold rounded-md text-sm sm:text-lg transition-all duration-300 hover:bg-[#8f7a3a] focus:outline-none active:bg-white active:text-black">
+            <button className="px-6 w-32 py-3 bg-[#ad954f] text-white font-semibold rounded-md text-sm sm:text-lg transition-all duration-300 hover:bg-[#8f7a3a] focus:outline-none active:bg-white active:text-black">
             Read more
           </button>
           </div>

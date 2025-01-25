@@ -3,14 +3,16 @@ import Header from "../component/Header";
 import OfferLine from "../component/OfferLine";
 import Hero from "../component/Hero";
 import Services from "../component/Services";
+import Footer from "../component/Footer";
 
 const Home = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-[68px]">
       
       <OfferLine />
       <Hero />
       <Services />
+      <Footer />
     </div>
   );
 };

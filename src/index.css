@@ -31,3 +31,8 @@ body{
   display: flex;
   animation: marquee 12s linear infinite;
 }
+
+
+.footerbg{
+  background: linear-gradient(90deg,#d4dfed,#eeeeee);
+}
