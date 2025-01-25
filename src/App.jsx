@@ -1,10 +1,10 @@
 import React from 'react'
-import SocialLink from './component/SocialLink'
+import Home from './Pages/Home'
 
 const App = () => {
   return (
     <div className=''>
-      <SocialLink/>
+      <Home />
     </div>
   )
 }
